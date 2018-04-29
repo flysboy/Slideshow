@@ -1,0 +1,100 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.wrapper{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.wrapper .sliderPage{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 2500px;
+	/*height: 300px;*/
+
+}
+.wrapper .sliderPage:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrapper .sliderPage li{
+	width: 500px;
+	height: 300px;
+	float: left;
+}
+.wrapper .sliderPage li img{
+	width: 100%;
+	height: 100%;
+}
+/*div{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: orange;
+}*/
+/*这一段可以改成*/
+/*html, body{
+	height: 100%;
+}*/
+/*这样与html一样高，就是全屏的那种*/
+/*div{
+	width: 100%;
+	height: 100%;
+	background: orange;
+}*/
+
+.wrapper .btn{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 50px;
+	height: 40px;
+	opacity: 0.1;
+	color: #000;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	background: #ccc;
+	cursor: pointer;
+}
+.wrapper .btn:hover{
+	opacity: 0.7；
+}
+.wrapper .leftBtn{
+	left: 20px;
+}
+.wrapper .rightBtn{
+	right: 20px;
+}
+.wrapper .sliderIndex{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+
+}
+.wrapper .sliderIndex i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background: #ddd;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.wrapper .sliderIndex .active{
+	background: rgba(0, 255, 121, 0.8);
+}
